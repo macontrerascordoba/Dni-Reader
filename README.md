@@ -23,18 +23,22 @@ La forma en la que lo hace es extrayendo todo el texto de la imagen, busca la li
 
 ### Requerimientos
 
-- Tesseract: [Como installar Tesseract en Windows](https://parzibyte.me/blog/2019/05/11/instalar-tesseract-ocr-windows-10/#Descargar_Tesseract_OCR)
-- Librerias de Python: (En linea de comandos)
+- Si quieres ejecutar desde el .exe necesitas:
+    - Tesseract: [Como installar Tesseract en Windows](https://parzibyte.me/blog/2019/05/11/instalar-tesseract-ocr-windows-10/#Descargar_Tesseract_OCR)
+  
+- Si quieres ejecutar el archivo .py además de Tesseract necesitarias los siguientes modulos de python:
     - PIL: `pip3 install pillow`
     - pytesseract: `pip3 install pytesseract`
+    - Tkinter: `pip3 install tk`
 
 
 ### Uso
 
-1. Pon la imagen del reverso del DNI dentro de la carpeta "public" con el nombre dni.jpg
-2. Abre la terminal en la carpeta Dni-Reader.
-3. Ejecuta el siguiente comando: `python3 main.py`
-4. El programa devolverá el numbero del DNI por consola, asi como en un fichero llamado dni.txt dentro de la carpeta public para que luego pueda ser usado por otros programas.
+
+1. Descarga y ejecuta el archivo "DniReader.exe o clona el repositorio y ejecuta el codigo con `python3 DniReader.py`.
+2. Busca y selecciona la image del DNI.
+3. Selecciona donde quieres guardar el resultado y el nombre del fichero.
+4. El programa guardará el DNI en el fichero indicado.
 
 ---
 
@@ -49,15 +53,18 @@ It works by extracting all the text from the image, look for the line that start
 
 ### Requeriments
 
-- Tesseract: [How to install in Windows](https://parzibyte.me/blog/2019/05/11/instalar-tesseract-ocr-windows-10/#Descargar_Tesseract_OCR)
-- Python libraries: (In Command Line)
+- If you want to execute form the .exe you will need:
+    - Tesseract: [How to install in Windows](https://linuxhint.com/install-tesseract-windows/)
+
+- If you want to execute from the .py file, you will also need the following python modules:
     - PIL: `pip3 install pillow`
     - pytesseract: `pip3 install pytesseract`
+    - Tkinter: `pip3 install tk`
 
 
 ### Usage
 
-1. Put the dni's reverse's image inside the "public" directory with the name dni.jpg.
-2. Open a terminal in the Dni-Reader directory.
-3. Run this command: `python3 main.py`
-4. The program will output the DNI number in console as well as in a the file call dni.txt so it can letter be used by other programs
+1. Download and execute the file "DniReader.exe" or clone the repository and execute the code with `python3 DniReader.py`.
+2. Search and select the DNI image.
+3. Select where do you want to save the result and the file name.
+4. The program will save the DNI on the especified file.
